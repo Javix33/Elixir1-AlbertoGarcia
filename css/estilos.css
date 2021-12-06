@@ -7,9 +7,6 @@
   background-color: #0C3559;
 }
 
-
-/*@media screen and (min-width: 480px) */
-
 .cabecera {
   font-family: "Roboto" sans-serif;
   background-image: url(../imagenes/agave1.jpg);
@@ -110,9 +107,32 @@
   width: 5vw;
   border-radius: 10%;
   display: block;
+  animation-name: animacion__redes;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacion__redes {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .footer__redes--icono:hover {
+  animation-play-state: paused;
   transform: scale(1.2);
   transition: all .5s;
   cursor: pointer;
@@ -267,6 +287,14 @@
   grid-template-columns: 1fr, 1fr;
 }
 
+@media screen and (max-width: 600px) {
+  .mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .formulario {
   font-family: "Roboto", sans-serif;
   font-size: 3vw;
@@ -281,6 +309,14 @@
   display: inline;
 }
 
+@media screen and (max-width: 600px) {
+  .formulario__contorno {
+    width: 120%;
+    margin-left: -10%;
+    align-self: center;
+  }
+}
+
 .formulario__titulo {
   font-size: 3vw;
   font-weight: 500;
@@ -293,8 +329,8 @@
 }
 
 .boton {
-  width: 10vw;
-  height: 3vw;
+  width: 12vw;
+  height: 4vw;
   border-radius: 60%;
   background-color: #123C73;
   color: white;
@@ -323,6 +359,12 @@
   background-color: white;
   border-radius: 10%;
   grid-area: imagen;
+}
+
+@media screen and (max-width: 600px) {
+  .mensaje__img {
+    display: none;
+  }
 }
 
 .productos {
