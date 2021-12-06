@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACTO</title>
+  <link rel="shortcut icon" href="../imagenes/icono.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="body">
+  <header class="cabecera">
+    <img src="../imagenes/logo elixir.jpg" alt="logotipo elixir" class="cabecera__logo">
+    <nav class="nav">
+      <a href="../index.html" class="nav__vinculo">
+        INICIO
+      </a>
+      <a href="elixir.html" class="nav__vinculo">
+        NOSTROS
+      </a>
+      <a href="productos.html" class="nav__vinculo">
+        PRODUCTOS
+      </a>
+      <a href="puntos-venta.html" class="nav__vinculo">
+        CONSIGUE ELIXIR
+      </a>
+      <a href="contacto.html" class="nav__vinculo">
+        CONTACTO
+      </a>
+    </nav>
+  </header>
+  <section>
+    <article class="contacto">
+      <h3 class="contacto__titulo">
+        Contactanos
+      </h3>
+      <p class="contacto__texto">
+        En Elixir tu opinion es muy importante, por favor envianos tus comentarios, atenderemos con gusto.
+      </p>
+      <table class="contacto__info">
+        <tr>
+          <td>
+            Elixir
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Mail: Correo_elixir@servelixir.com
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tel: 55-38-03-90-79
+          </td>
+        </tr>
+      </table>
+    </article>
+    <article class="mensaje">
+      <form action="" method="post" class="formulario">
+        <fieldset class="formulario__contorno">
+          <legend class="formulario__titulo">
+            Gracias por contactarnos
+          </legend>
+          <label for="nombre" class="formulario__campos">
+            Nombre
+          </label>
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <label for="mail" class="formulario__campos">
+            Correo
+          </label>
+          <input type="email" name="mail" placeholder="Correo electronico" required>
+          <label for="telefono" class="formulario__campos">
+            Telefono
+          </label>
+          <input type="tel" placeholder="xx-xx-xx-xx-xx" name="telefono" required>
+          <h5 class="formulario__subtitulo">
+            Enivanos tu consulta
+          </h5>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10">
+          </textarea required><br>
+            <input class="boton" type="submit" value="Enviar">
+            <input class="boton" type="reset" value="Borrar" >
+        </fieldset>
+      </form>
+      <img class="mensaje__img" src="../imagenes/sent-message-animate.svg" alt="hombre enviando un mensaje">
+    </article>
+  </section>
+  <footer class="footer">
+    <h4 class="footer__texto">
+      2021, MEZCAL ELIXIR, DERECHOS RESERVADOS |
+      <a href="aviso-de-privacidad.html" class="footer__vinculo">
+                AVISO DE PRIVACIDAD |
+      </a>
+      <a href="terminos-y-condiciones.html" class="footer__vinculo">
+                TERMINOS Y CONDICIONES
+      </a>
+    </h4>
+    <div class="footer__redes">
+      <a href="https://www.facebook.com/Elespirituelixir " target="_blank" rel="noopener noreferrer">
+        <img class="footer__redes--icono" src="../imagenes/iconos/facebook icono.svg" alt="icono de facebook">
+      </a>
+      <a href="https://www.instagram.com/elixir_mezc/?hl=es " target="_blank" rel="noopener noreferrer">
+        <img class="footer__redes--icono" src="../imagenes/iconos/instagram icono.png" alt="icono de instagram">
+      </a>
+      <img class="footer__redes--icono" src="../imagenes/iconos/whatsapp icono.png" alt="icono de whatsapp">
+    </div>
+  </footer>
+</body>
+</html>
