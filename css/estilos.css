@@ -23,19 +23,20 @@
   justify-self: center;
 }
 
-. .nav__vinculo {
+.nav__vinculo {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  margin-left: 1%;
 }
 
-.nav__vinculo:hover {
-  transform: scale(1.2);
-  border: dotted white 2px;
-  border-radius: 20%;
-  transition: all .5s;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.678)
+@media screen and (min-width:1000px) {
+  .nav__vinculo:hover {
+    transform: scale(1.2);
+    border: dotted white 2px;
+    border-radius: 20%;
+    transition: all .5s;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.678)
+  }
 }
 
 .nav__vinculo:focus {
