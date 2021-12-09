@@ -80,14 +80,26 @@
 }
 
 .footer__redes--icono {
-  height: 5vw;
-  width: 5vw;
+  height: 4vw;
+  width: 4vw;
   border-radius: 10%;
   display: block;
   animation-name: animacion__redes;
   animation-duration: 4s;
   animation-delay: 2s;
   animation-iteration-count: infinite;
+}
+
+.icono__f {
+  margin-left: -9vw;
+}
+
+.icono__i {
+  margin-left: -4vw;
+}
+
+.icono__w {
+  margin-left: 1vw;
 }
 
 @keyframes animacion__redes {
@@ -210,6 +222,7 @@
 }
 
 .aviso {
+  min-height: 84vh;
   font-family: "Roboto", sans-serif;
 }
 
