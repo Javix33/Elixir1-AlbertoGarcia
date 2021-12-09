@@ -4,6 +4,7 @@
 }
 
 .body {
+  min-height: 100vw;
   background-color: #0C3559;
 }
 
@@ -403,6 +404,8 @@
 }
 
 .distribuidores {
+  padding-top: 3vw;
+  min-height: 84vh;
   font-family: "Roboto" sans-serif;
   color: white;
   display: flex;
@@ -411,7 +414,7 @@
 }
 
 .distribuidores__titulo {
-  margin-top: 3%;
+  margin-top: 3vw;
   font-size: 4vw;
   text-align: center;
 }
@@ -419,7 +422,7 @@
 .distribuidores__texto {
   font-size: 3vw;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 3vw;
   margin-left: 2%;
 }
 
@@ -427,11 +430,12 @@
   border-radius: 10%;
   width: 60vw;
   height: 60vw;
-  margin-bottom: 3vw;
   margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .nosotros {
+  min-height: 10vh;
   font-family: "Roboto", sans-serif;
   color: white;
 }
