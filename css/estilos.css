@@ -31,9 +31,7 @@
 
 @media screen and (min-width:1000px) {
   .nav__vinculo:hover {
-    transform: scale(1.2);
-    border: dotted white 2px;
-    border-radius: 20%;
+    transform: scale(1.1);
     transition: all .5s;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.678)
