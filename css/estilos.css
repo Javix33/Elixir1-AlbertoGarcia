@@ -139,6 +139,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .article1__titulo {
@@ -150,7 +151,7 @@
 
 @media screen and (min-width:600px) {
   .article1__titulo {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -162,7 +163,7 @@
 
 .article1__tabla {
   height: auto;
-  width: auto;
+  width: 70vw;
   background-color: #11B4D9;
   border-radius: 20%;
   font-family: "Roboto", sans-serif;
@@ -201,6 +202,10 @@
   font-size: 3vw;
   color: white;
   list-style-type: none;
+}
+
+.btn {
+  font-size: 2.5rem;
 }
 
 .procesos__subtitulo {
@@ -493,9 +498,13 @@
 }
 
 .nosotros__titulo {
-  font-size: 6vw;
+  font-size: 5vw;
   text-align: center;
   margin-top: 3%;
+}
+
+.ul__nosotros {
+  list-style: none;
 }
 
 .nosotros__subtitulo {
