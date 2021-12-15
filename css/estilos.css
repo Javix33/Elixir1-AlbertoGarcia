@@ -197,15 +197,22 @@
 }
 
 .procesos {
-  margin-left: 3vw;
   font-family: "Roboto", sans-serif;
   font-size: 3vw;
   color: white;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .btn {
+  margin: 1vw;
   font-size: 2.5rem;
+  background-color: #123C73;
+  border-radius: 10px;
+  border: solid white 2px;
 }
 
 .procesos__subtitulo {
@@ -233,6 +240,13 @@
   margin-left: 3vw;
   width: auto;
   height: auto;
+}
+
+.video {
+  width: 50vw;
+  height: 40vh;
+  border-radius: 10px;
+  border: solid white 2px;
 }
 
 .aviso {
