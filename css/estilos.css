@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto" sans-serif;
 }
 
 .body {
@@ -199,6 +200,7 @@
 .procesos {
   font-family: "Roboto", sans-serif;
   font-size: 3vw;
+  margin-left: -2vw;
   color: white;
   list-style-type: none;
   display: flex;
@@ -208,11 +210,15 @@
 }
 
 .btn {
-  margin: 1vw;
+  margin-bottom: 1vw;
   font-size: 2.5rem;
   background-color: #123C73;
   border-radius: 10px;
   border: solid white 2px;
+}
+
+.card {
+  border: none;
 }
 
 .procesos__subtitulo {
