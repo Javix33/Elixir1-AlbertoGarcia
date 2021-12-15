@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto" sans-serif;
 }
 
 .body {
@@ -139,6 +140,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .article1__titulo {
@@ -150,7 +152,7 @@
 
 @media screen and (min-width:600px) {
   .article1__titulo {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -162,7 +164,7 @@
 
 .article1__tabla {
   height: auto;
-  width: auto;
+  width: 70vw;
   background-color: #11B4D9;
   border-radius: 20%;
   font-family: "Roboto", sans-serif;
@@ -196,11 +198,27 @@
 }
 
 .procesos {
-  margin-left: 3vw;
   font-family: "Roboto", sans-serif;
   font-size: 3vw;
+  margin-left: -2vw;
   color: white;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  margin-bottom: 1vw;
+  font-size: 2.5rem;
+  background-color: #123C73;
+  border-radius: 10px;
+  border: solid white 2px;
+}
+
+.card {
+  border: none;
 }
 
 .procesos__subtitulo {
@@ -228,6 +246,13 @@
   margin-left: 3vw;
   width: auto;
   height: auto;
+}
+
+.video {
+  width: 50vw;
+  height: 40vh;
+  border-radius: 10px;
+  border: solid white 2px;
 }
 
 .aviso {
@@ -493,9 +518,13 @@
 }
 
 .nosotros__titulo {
-  font-size: 6vw;
+  font-size: 5vw;
   text-align: center;
   margin-top: 3%;
+}
+
+.ul__nosotros {
+  list-style: none;
 }
 
 .nosotros__subtitulo {
