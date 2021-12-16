@@ -18,7 +18,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .body {
@@ -56,11 +56,7 @@
     cursor: pointer;
   }
 }
-
-.navbar-toggler {
-  border: solid 1px white;
-}
-.navbar-toggler-icon {
+.cabecera .navbar-toggler-icon {
   background-image: url(../imagenes/iconos/menu.png);
 }
 
@@ -253,7 +249,7 @@
 }
 
 .aviso {
-  min-height: 84vh;
+  min-height: 80vh;
   font-family: "Roboto", sans-serif;
 }
 .aviso__texto {
@@ -283,43 +279,45 @@
   }
 }
 
-.contacto {
+.section__contacto {
+  padding-top: 3vh;
+  min-height: 80vh;
+}
+.section__contacto .contacto {
   font-family: "Roboto", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
 }
-.contacto__titulo {
+.section__contacto .contacto__titulo {
   font-size: 4vw;
   text-align: center;
 }
 @media screen and (min-width: 992px) {
-  .contacto__titulo {
+  .section__contacto .contacto__titulo {
     font-size: 4vw;
   }
 }
-.contacto__texto {
+.section__contacto .contacto__texto {
   font-size: 2vw;
   text-align: center;
 }
 @media screen and (min-width: 992px) {
-  .contacto__texto {
+  .section__contacto .contacto__texto {
     font-size: 2vw;
   }
 }
-.contacto__info {
+.section__contacto .contacto__info {
   font-size: 2vw;
   font-weight: 500;
   text-align: center;
 }
 @media screen and (min-width: 992px) {
-  .contacto__info {
+  .section__contacto .contacto__info {
     font-size: 2vw;
   }
 }
-
-.mensaje {
-  min-height: 84vh;
+.section__contacto .mensaje {
   align-items: center;
   justify-items: center;
   margin-top: 3%;
@@ -328,24 +326,24 @@
   grid-template-areas: "formulario imagen";
 }
 @media screen and (max-width: 991px) {
-  .mensaje {
+  .section__contacto .mensaje {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-.mensaje__img {
+.section__contacto .mensaje__img {
   width: 35vw;
   background-color: white;
   border-radius: 10px;
   grid-area: imagen;
 }
 @media screen and (max-width: 991px) {
-  .mensaje__img {
+  .section__contacto .mensaje__img {
     display: none;
   }
 }
-.mensaje .formulario {
+.section__contacto .mensaje .formulario {
   font-family: "Roboto", sans-serif;
   font-size: 2vw;
   color: white;
@@ -353,33 +351,33 @@
   display: inline;
   grid-area: formulario;
 }
-.mensaje .formulariocontorno {
+.section__contacto .mensaje .formulariocontorno {
   text-align: center;
   display: inline;
 }
 @media screen and (max-width: 991px) {
-  .mensaje .formulariocontorno {
+  .section__contacto .mensaje .formulariocontorno {
     width: 120%;
     margin-left: -10%;
     align-self: center;
   }
 }
-.mensaje .formulario__titulo {
+.section__contacto .mensaje .formulario__titulo {
   font-size: 2vw;
   font-weight: 500;
 }
-.mensaje .formulario__subtitulo {
+.section__contacto .mensaje .formulario__subtitulo {
   margin-top: 3%;
   margin-bottom: 3%;
   font-size: 2vw;
   font-weight: 400;
 }
-.mensaje .formulario__campos {
+.section__contacto .mensaje .formulario__campos {
   display: block;
   text-align: left;
   margin-left: 10%;
 }
-.mensaje .formulario .boton {
+.section__contacto .mensaje .formulario .boton {
   width: 12vw;
   height: 4vw;
   border-radius: 10px;
@@ -387,25 +385,21 @@
   color: white;
   border: white solid 1px;
 }
-.mensaje .formulario .boton:hover {
+.section__contacto .mensaje .formulario .boton:hover {
   transform: scale(1.2);
   transition: all 0.3s;
   cursor: pointer;
 }
-.mensaje .formulario .boton:focus {
+.section__contacto .mensaje .formulario .boton:focus {
   transform: scale(1);
-}
-
-.card {
-  border: none;
 }
 
 .productos {
   margin-top: 3%;
   font-family: "Roboto", sans-serif;
   color: white;
+  min-height: 80vh;
 }
-
 .productos__li--izquierda {
   margin-top: 2vw;
   padding-left: 3vw;
@@ -417,7 +411,6 @@
   grid-template-columns: 1fr, 1fr;
   padding-bottom: 2vw;
 }
-
 .productos__li--derecha {
   margin-top: 2vw;
   padding-left: 3vw;
@@ -430,30 +423,26 @@
   grid-template-columns: 1fr, 1fr;
   padding-bottom: 2vw;
 }
-
 .productos__card {
   padding-right: 3vw;
   padding-left: 3vw;
   display: inline-block;
   grid-area: textos;
 }
-
 .productos__titulo {
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
 }
-
 .productos__texto {
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: justify;
   margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%;
 }
-
 .productos__img {
   height: 40vw;
-  border-radius: 10%;
+  border-radius: 10px;
   margin-left: 8%;
   margin-top: 2%;
   margin-right: 10%;
@@ -462,29 +451,26 @@
 
 .distribuidores {
   padding-top: 3vw;
-  min-height: 84vh;
-  font-family: "Roboto" sans-serif;
+  min-height: 80vh;
+  font-family: "Roboto", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .distribuidores__titulo {
   margin-top: 3vw;
   font-size: 4vw;
   text-align: center;
 }
-
 .distribuidores__texto {
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: center;
   margin-top: 3vw;
   margin-left: 2%;
 }
-
-.mapa {
-  border-radius: 10%;
+.distribuidores .mapa {
+  border-radius: 10px;
   width: 60vw;
   height: 60vw;
   margin-top: 3vw;
@@ -492,31 +478,27 @@
 }
 
 .nosotros {
-  min-height: 10vh;
+  min-height: 80vh;
   font-family: "Roboto", sans-serif;
   color: white;
 }
-
 .nosotros__titulo {
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
   margin-top: 3%;
 }
-
-.ul__nosotros {
+.nosotros__ul {
   list-style: none;
 }
-
 .nosotros__subtitulo {
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: left;
   margin-top: 3%;
   margin-left: 3%;
   margin-right: 3%;
 }
-
 .nosotros__texto {
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: justify;
   margin: 3% 3% 3% 3%;
 }
