@@ -128,7 +128,6 @@ $e:map-get($alineacion, e);
   display: flex;
   flex-direction: column;
   align-items: $c;
-  min-height: $heigth-completo;
   .article1 {
     @extend .section;
     &__titulo {
@@ -191,7 +190,6 @@ $e:map-get($alineacion, e);
     margin-left: -2vw;
     list-style-type: none;
     @extend.section;
-    justify-content: space-around;
     &__subtitulo {
       font-size: 4vw;
       text-align: $l;
@@ -213,8 +211,8 @@ $e:map-get($alineacion, e);
       @extend .textos;
       height: fit-content;
       width: 28vw;
-      margin-bottom: 1vw;
       font-size: $Size-Titulos;
+      margin-bottom: 1vw;
       @include bordes();
       @include bgblur();
     }

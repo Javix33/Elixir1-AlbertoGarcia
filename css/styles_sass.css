@@ -118,7 +118,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
 }
 .section .article1__titulo, .distribuidores .article1__titulo {
   text-align: center;
@@ -190,7 +189,6 @@
 .section .procesos, .distribuidores .procesos {
   margin-left: -2vw;
   list-style-type: none;
-  justify-content: space-around;
 }
 .section .procesos__subtitulo, .distribuidores .procesos__subtitulo {
   font-size: 4vw;
@@ -212,8 +210,8 @@
 .section .procesos .btn, .distribuidores .procesos .btn {
   height: fit-content;
   width: 28vw;
-  margin-bottom: 1vw;
   font-size: 4vw;
+  margin-bottom: 1vw;
   border: 2px;
   border-radius: 20px;
   border-color: white;
