@@ -18,16 +18,19 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+.textos, .nosotros, .distribuidores, .productos, .section__contacto .mensaje .formulario .boton, .section__contacto .mensaje .formulario, .section__contacto .contacto, .aviso, .section .procesos .btn, .distribuidores .procesos .btn, .section .procesos, .distribuidores .procesos, .section .article1__subtitulo, .distribuidores .article1__subtitulo, .section .article1__tabla, .distribuidores .article1__tabla, .section .article1__titulo, .distribuidores .article1__titulo, .footer__vinculo, .footer__texto, .cabecera__vinculo, .cabecera {
   font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration: none;
 }
 
 .body {
-  min-height: 100vh;
   background-color: #0C3559;
 }
 
 .cabecera {
-  font-family: "Roboto", sans-serif;
   background-color: 225, 255, 255, 7;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid white;
@@ -40,10 +43,6 @@
   margin-left: 2%;
   grid-area: logo;
   justify-self: center;
-}
-.cabecera__vinculo {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
 }
 .cabecera__vinculo:focus {
   transform: scale(1);
@@ -62,6 +61,7 @@
 
 .footer {
   background-color: 225, 255, 255, 7;
+  backdrop-filter: blur(10px);
   height: 16vw;
   width: auto;
   border-top-left-radius: 10px;
@@ -74,16 +74,10 @@
   grid-gap: 5vw;
 }
 .footer__texto {
-  font-family: "Roboto", sans-serif;
   font-size: 2vw;
-  color: white;
   font-weight: 900;
-  text-decoration: none;
   grid-area: texto;
   margin-left: 2vw;
-}
-.footer__vinculo {
-  text-decoration: none;
 }
 .footer__redes {
   grid-area: redes;
@@ -119,35 +113,31 @@
   cursor: progress;
 }
 
-.section {
+.section, .distribuidores, .distribuidores .article1, .distribuidores .procesos, .section .procesos, .section .article1 {
   width: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
 }
-.section .article1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.section .article1__titulo {
-  font-family: "Roboto", sans-serif;
-  font-size: 4vw;
+.section .article1__titulo, .distribuidores .article1__titulo {
   text-align: center;
-  color: white;
   font-weight: 900;
 }
-.section .article1__titulo--img {
-  border: white solid 1px;
-  backdrop-filter: blur(20px);
+.section .article1__titulo--img, .distribuidores .article1__titulo--img {
   background-color: 225, 255, 255, 7;
+  backdrop-filter: blur(10px);
+  border: 2px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
 }
 @media screen and (min-width: 600px) {
-  .section .article1__titulo {
+  .section .article1__titulo, .distribuidores .article1__titulo {
     font-size: 5vw;
   }
 }
-.section .article1__imagen--fondo {
+.section .article1__imagen--fondo, .distribuidores .article1__imagen--fondo {
   margin-top: 2vw;
   display: flex;
   flex-direction: column;
@@ -155,102 +145,99 @@
   height: 33vw;
   width: 50vw;
   background-image: url(../imagenes/mezcal.png);
+  border: 2px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid white;
-  border-radius: 10px;
 }
-.section .article1__tabla {
+.section .article1__tabla, .distribuidores .article1__tabla {
   height: auto;
   width: 70vw;
   background-color: #11B4D9;
-  border-radius: 20%;
-  font-family: "Roboto", sans-serif;
-  color: white;
+  border: 2px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
   margin: 2vw;
 }
-.section .article1__subtitulo {
+.section .article1__subtitulo, .distribuidores .article1__subtitulo {
   margin-top: 2vw;
-  font-family: "Roboto", sans-serif;
   font-size: 4vw;
   font-weight: 700;
   text-align: center;
 }
 @media screen and (min-width: 600px) {
-  .section .article1__subtitulo {
+  .section .article1__subtitulo, .distribuidores .article1__subtitulo {
     font-size: 3vw;
   }
 }
-.section .article1__definicion {
+.section .article1__definicion, .distribuidores .article1__definicion {
   padding: 2vw;
   padding-top: 0;
   padding-bottom: 0;
   font-size: 2vw;
   text-align: center;
 }
-.section .article1__definicion--lista {
+.section .article1__definicion--lista, .distribuidores .article1__definicion--lista {
   list-style-type: square;
   margin-left: 10%;
   text-align: left;
   padding-bottom: 4%;
 }
-.section .procesos {
-  font-family: "Roboto", sans-serif;
-  font-size: 2vw;
+.section .procesos, .distribuidores .procesos {
   margin-left: -2vw;
-  color: white;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-around;
 }
-.section .procesos__subtitulo {
+.section .procesos__subtitulo, .distribuidores .procesos__subtitulo {
   font-size: 4vw;
   text-align: left;
 }
-.section .procesos__contenido {
+.section .procesos__contenido, .distribuidores .procesos__contenido {
   list-style-type: upper-roman;
   font-size: 3vw;
   margin-left: 5vw;
   text-align: justify;
   margin-right: 5vw;
 }
-.section .procesos__contenido--ul {
+.section .procesos__contenido--ul, .distribuidores .procesos__contenido--ul {
   list-style-type: circle;
   font-size: 3vw;
   margin-left: 5vw;
   margin-right: 5vw;
 }
-.section .procesos .btn {
-  color: white;
-  font-family: "Roboto", sans-serif;
+.section .procesos .btn, .distribuidores .procesos .btn {
   height: fit-content;
   width: 28vw;
   margin-bottom: 1vw;
   font-size: 4vw;
+  border: 2px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
   background-color: 225, 255, 255, 7;
-  backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 2px solid white;
+  backdrop-filter: blur(10px);
 }
-.section .article2 {
+.section .article2, .distribuidores .article2 {
   margin-top: 1vw;
   margin-left: 3vw;
   width: auto;
   height: auto;
 }
-.section .article2__video {
+.section .article2__video, .distribuidores .article2__video {
   width: 50vw;
   height: 40vh;
-  border-radius: 10px;
-  border: solid white 2px;
+  border: 2px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
 }
 
 .aviso {
   min-height: 80vh;
-  font-family: "Roboto", sans-serif;
 }
 .aviso__texto {
   font-size: 2vw;
@@ -284,8 +271,6 @@
   min-height: 80vh;
 }
 .section__contacto .contacto {
-  font-family: "Roboto", sans-serif;
-  color: white;
   display: flex;
   flex-direction: column;
 }
@@ -344,9 +329,7 @@
   }
 }
 .section__contacto .mensaje .formulario {
-  font-family: "Roboto", sans-serif;
   font-size: 2vw;
-  color: white;
   margin-left: 3%;
   display: inline;
   grid-area: formulario;
@@ -380,10 +363,11 @@
 .section__contacto .mensaje .formulario .boton {
   width: 12vw;
   height: 4vw;
-  border-radius: 10px;
-  background-color: #123C73;
-  color: white;
-  border: white solid 1px;
+  border: 2px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
+  background-color: #0C3559;
 }
 .section__contacto .mensaje .formulario .boton:hover {
   transform: scale(1.2);
@@ -396,8 +380,6 @@
 
 .productos {
   margin-top: 3%;
-  font-family: "Roboto", sans-serif;
-  color: white;
   min-height: 80vh;
 }
 .productos__li--izquierda {
@@ -442,7 +424,10 @@
 }
 .productos__img {
   height: 40vw;
-  border-radius: 10px;
+  border: 2px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
   margin-left: 8%;
   margin-top: 2%;
   margin-right: 10%;
@@ -452,11 +437,6 @@
 .distribuidores {
   padding-top: 3vw;
   min-height: 80vh;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .distribuidores__titulo {
   margin-top: 3vw;
@@ -470,7 +450,10 @@
   margin-left: 2%;
 }
 .distribuidores .mapa {
-  border-radius: 10px;
+  border: 2px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
   width: 60vw;
   height: 60vw;
   margin-top: 3vw;
@@ -479,8 +462,6 @@
 
 .nosotros {
   min-height: 80vh;
-  font-family: "Roboto", sans-serif;
-  color: white;
 }
 .nosotros__titulo {
   font-size: 4vw;
